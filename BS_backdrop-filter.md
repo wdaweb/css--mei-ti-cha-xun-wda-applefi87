@@ -4,7 +4,7 @@ https://codepen.io/robinrendle/full/LmzLEL
 
 ```html
 <div class="container-fluid">
-   <div class="row">
+  <div class="row">
       <div class="col">SCROLL</div>
       <div class="col">backdrop-filter: none</div>
       <div class="col">backdrop-filter: grayscale(1)</div>
@@ -16,6 +16,6 @@ https://codepen.io/robinrendle/full/LmzLEL
       <div class="col">backdrop-filter: sepia(0.4)</div>
       <div class="col">backdrop-filter: saturate(1.8)</div>
       <div class="col">backdrop-filter: hue-rotate(120deg)</div>
-   </div>
+   </div> 
 </div>
 ```

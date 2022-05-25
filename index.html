@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <title>Document</title>
+  <style>
+    img {
+      background-size: contain;
+      height: 100vh;
+      z-index: -1;
+    }
+
+    #out {
+      width: calc(100% - 40px);
+      margin: 20px 20px;
+    }
+
+    /* .container-fluid{
+  width: 100%;
+} */
+    .btn {
+      height: 100px;
+      width: 150px;
+      font-size: 1rem;
+      color: white;
+      border: 1px solid black;
+      border-radius: 30px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .btn:first-child {
+      font-size: 2rem;
+    }
+
+    @media(min-width: 600px) {
+      #out {
+        flex-direction: row;
+        height: calc(100% - 40px);
+        width: 3000px;
+        vertical-align: bottom;
+      }
+
+      .btn {
+        height: 70%;
+      }
+
+      .btn:first-child {
+        border-bottom-left-radius: 30px !important;
+        border-top-right-radius: 0 !important;
+      }
+      .btn:last-child {
+        border-bottom-left-radius: 0 !important;
+        border-top-right-radius: 30px !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <img class="card-img position-fixed " src="https://picsum.photos/id/54/1920/1080">
+  <div class="container-fluid card-img-overlay">
+    <div id="out" class="align-items-center btn-group-vertical">
+      <div class="btn">Backdrop-filter 效果</div>
+      <div class="btn" style="backdrop-filter: none">backdrop-filter: none</div>
+      <div class="btn" style=" backdrop-filter: grayscale(1)">backdrop-filter: grayscale(1)</div>
+      <div class="btn" style="backdrop-filter: brightness(1.5)">backdrop-filter: brightness(1.5)</div>
+      <div class="btn" style="backdrop-filter: blur(5px)">backdrop-filter: blur(5px)</div>
+      <div class="btn" style="backdrop-filter: contrast(0.8)">backdrop-filter: contrast(0.8)</div>
+      <div class="btn" style="backdrop-filter: invert(0.7)">backdrop-filter: invert(0.7)</div>
+      <div class="btn" style="backdrop-filter: opacity(0.4)">backdrop-filter: opacity(0.4)</div>
+      <div class="btn" style="backdrop-filter: sepia(0.4)">backdrop-filter: sepia(0.4)</div>
+      <div class="btn" style="backdrop-filter: saturate(1.8)">backdrop-filter: saturate(1.8)</div>
+      <div class="btn" style="backdrop-filter: hue-rotate(120deg)">backdrop-filter: hue-rotate(120deg)</div>
+    </div>
+  </div>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
